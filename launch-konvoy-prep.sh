@@ -27,4 +27,4 @@ rm -f master.zip
 rm -f launch-konvoy-prep.sh
 
 # Final reboot to make sure everything is applied
-reboot
+#reboot
