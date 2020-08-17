@@ -1,6 +1,6 @@
 * -crlf
 * text=auto
-* text eol=lf
+*.sh text eol=lf
 
 *.doc	diff=astextplain
 *.DOC	diff=astextplain
