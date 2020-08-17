@@ -22,9 +22,9 @@ yum -y remove unzip
 
 # Clean up
 cd ..
-rm -r scvmm-linux-template-scripts-master
-rm master.zip
-rm launch-konvoy-prep.sh
+rm -r -f scvmm-linux-template-scripts-master
+rm -f master.zip
+rm -f launch-konvoy-prep.sh
 
 # Final reboot to make sure everything is applied
 reboot
