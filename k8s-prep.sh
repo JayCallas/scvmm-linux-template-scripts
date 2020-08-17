@@ -30,13 +30,7 @@ modprobe br_netfilter
 echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 
 # Custom steps
-sh ./konvoy-prep.sh
-sh ./cv-prep.sh
+sh ./standard-prep.sh
 
-# Update everything from Yum to the latest version
-yum clean all
-yum makecache
-yum -y update
-
-# Reboot
-reboot
+# Reboot will be needed
+# May make sense to add flag to this script
