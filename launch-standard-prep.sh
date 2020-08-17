@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Downloads and launches the Konvoy prep script
+# Downloads and launches the Standard prep script
 # ------------------------------------------------------
 
 # Pull down package for unzipping repository
@@ -12,19 +12,19 @@ unzip master.zip
 cd scvmm-linux-template-scripts-master
 
 # Mark initial script as executable
-chmod +x konvoy-prep.sh
+chmod +x standard-prep.sh
 
 # Remove package for unzipping since is no longer needed
 yum -y remove unzip
 
 # Fire the script off
-./konvoy-prep.sh
+./standard-prep.sh
 
 # Clean up
 cd ..
 rm -r scvmm-linux-template-scripts-master
 rm master.zip
-rm launch-konvoy-prep.sh
+rm launch-standard-prep.sh
 
 # Final reboot to make sure everything is applied
 reboot
